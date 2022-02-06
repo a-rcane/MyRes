@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyResume</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="EEq9Si_nkvqMPAJRRndjNdslEWgPp3tb_l-yuRmK9jVzG9TJyt2nv93XFswTta8TUm6T2Qk5E6xhgToaMQt-GQ" />
+    
+    <link rel="stylesheet" media="all" href="/assets/application-fac451840d545980eb6d33ef615211a02e2e45b0fad6f1d2ce8f323eaf531934.css" data-turbolinks-track="reload" />
+    <link rel="stylesheet" media="all" href="/packs/css/application-0cac2120.css" data-turbolinks-track="reload" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="/packs/js/application-a8ac5f2aac741bdb9f84.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body class="bg-gray-50">
+
+    <% flash.each do |message_type, message| %>
+        <%= render 'shared/alert', type: message_type, message: message %>
+    <% end %>
+    
+    <%= yield %>
+
+  </body>
+</html>
